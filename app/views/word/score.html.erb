@@ -1,0 +1,13 @@
+<h1>Your score</h1>
+
+
+
+<ul>
+<li>You took: <%=(@answer[:time].to_i) %> seconds</li>
+<li>Your score is <%= @answer[:score] %></li>
+<li>Message: <%= @answer[:message] %></li>
+<li>Translation: <%= @answer[:translation] %></li>
+</ul>
+
+
+<%= link_to "Play again", "/game" %>

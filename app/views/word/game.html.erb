@@ -1,0 +1,16 @@
+<h1>Word Game</h1>
+<p>Create a word with these given letters:</p>
+
+<%= @grid %>
+<p> </p>
+
+
+<form action="/score" method="get">
+  <input type="text" name="query" placeholder="Enter a word">
+  <input type="submit">
+  <input type="hidden" name="grid" value='<%= @grid %>' >
+  <input type="hidden" name="start_time" value='<%= @start_time %>' >
+</form>
+
+
+
